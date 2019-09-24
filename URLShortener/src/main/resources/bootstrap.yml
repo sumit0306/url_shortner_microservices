@@ -1,0 +1,27 @@
+  
+spring:
+  application:
+    name: url-shortener
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+        hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+            jdbc:
+              time_zone: UTC
+            format_sql: true      
+  cloud:
+    config:
+      uri: http://config:8888
+      fail-fast: true
+     
+      
+
+    
+      
+
+  
+    
+    
